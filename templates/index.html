@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block cta %}
+<div class="container hero">
+    <div class="row">
+        <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+            <h1>Des soins médicaux exceptionnels pour tous les âges.</h1>
+            <p>Dans notre centre médical, nous combinons une médecine de classe mondiale avec une approche humaine et bienveillante.</p>
+            <a href="{% url 'appointment' %}" class="btn btn-light btn-lg action-button" type="button">Prendre un rendez-vous</a>
+        </div>
+    </div>
+</div>
+{% endblock cta %}
+
+{% block content %}
+
+<section class="container py-5" style="margin-block:200px;" id="team">
+    <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+            <h1 class="display-4">Notre Équipe</h1>
+            <p class="lead">Faites confiance à des professionnels qualifiés et expérimentés.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center">
+
+            <!-- Équipe -->
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static 'img/team1.jpg' %}" alt="" class="mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Jose</h5>
+                    <span class="small text-uppercase text-muted">Anesthésiste consultant</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static 'img/team2.jpg' %}" alt="" class="mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr Mariane</h5>
+                    <span class="small text-uppercase text-muted">Cardiothoracique consultant</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static 'img/team3.jpg' %}" alt="" class="mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr juliette</h5>
+                    <span class="small text-uppercase text-muted">Dermatologue consultante</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 mb-5">
+                <div class="bg-white rounded shadow-sm py-5 px-4">
+                    <img src="{% static 'img/team4.png' %}" alt="" class="mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0">Dr John</h5>
+                    <span class="small text-uppercase text-muted">Gynécologue-obstétricien consultant</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="bg-primary text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="fw-light text-white">Services</h1>
+            <p class="overview">Nous offrons des soins experts et attentionnés à notre communauté. Vous êtes au cœur de tout ce que nous faisons. Laissez-nous être votre partenaire santé.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="{% static 'img/service1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Soins Primaires</h5>
+                        <div class="card-text text-black-50">Vos professionnels de santé personnalisés.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Dermatologie</h5>
+                        <div class="card-text text-black-50">Des soins de la peau simplifiés.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="{% static 'img/service3.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">informaticien</h5>
+                        <div class="card-text text-black-50">Notre expert numérique.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="{% static 'img/service4.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Thérapie PrEP</h5>
+                        <div class="card-text text-black-50">Restez protégé en cas de risque élevé d’exposition au VIH.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-center conatiner" style="margin-block:200px;" id="reviews">
+    <h2>Patients Satisfaits</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-box"><img src="{% static 'img/patient1.jpg' %}" alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia...</p>
+                <p class="overview">Michael Holz</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'img/patient2.jpg' %}" alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p class="overview">Antonio Moreno</p>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="{% static 'img/patient3.jpg' %}" alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus...</p>
+                <p class="overview">Paula Wilson</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="card m-4 p-4">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="contact-detail-box">
+                    <i class="far fa-envelope text-colored fa-3x"></i>
+                    <h4>Nous Contacter</h4>
+                    <abbr title="Téléphone">Tél :</abbr> (123) 456-7890<br>
+                    Email : <a href="mailto:email@email.com" class="text-muted">email@email.com</a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="contact-detail-box">
+                    <i class="fa fa-map-marker fa-3x text-colored"></i>
+                    <h4>Notre Adresse</h4>
+                    <address>
+                        180 avenue François Mitterrand<br>
+                        91200 Athis-Mons<br>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.5982710448757!2d2.37216559788808!3d48.713158954261154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e675ebb443702f%3A0xae27d487aff3891f!2s180%20Av.%20Fran%C3%A7ois%20Mitterrand%2C%2091200%20Athis-Mons!5e0!3m2!1sfr!2sfr!4v1744364380723!5m2!1sfr!2sfr" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name2">Nom</label>
+                        <input class="form-control" id="name2" name="name" type="text" placeholder="Nom">
+                        <div class="error" id="err-name" style="display: none;">Veuillez entrer votre nom</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Email</label>
+                        <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
+                        <div class="error" id="err-emailvld" style="display: none;">L'adresse e-mail n'est pas valide</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message2">Message</label>
+                        <textarea class="form-control" id="message2" name="message" rows="5" placeholder="Message"></textarea>
+                        <div class="error" id="err-message" style="display: none;">Veuillez entrer un message</div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md" id="send">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
